@@ -1,36 +1,14 @@
 #include <stdio.h>
-
-int main() {
-    for (int num1 = 0; num1 <= 99; num1++) {
-        for (int num2 = num1; num2 <= 99; num2++) {
-            int tens1 = num1 / 10;
-            int ones1 = num1 % 10;
-            int tens2 = num2 / 10;
-            int ones2 = num2 % 10;
-
-            // Print tens digit of num1
-            putchar('0' + tens1);
-
-            // Print ones digit of num1
-            putchar('0' + ones1);
-
-            // Print space
-            putchar(' ');
-
-            // Print tens digit of num2
-            putchar('0' + tens2);
-
-            // Print ones digit of num2
-            putchar('0' + ones2);
-
-            // Print comma and space unless it's the last combination
-            if (num1 != 99 || num2 != 99) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-
-    return 0;
+/**
+ * main - A program that prints the size of various computer types
+ * Return: 0 (Success)
+ */
+int main(void)
+{
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
+printf("Size of an int: %lu byte(S)\n", sizeof(int));
+printf("Size of a long int: %lu byte(S)\n", sizeof(long int));
+printf("Size of a long long int: %lu byte(s)\n", sizeof(long long int));
+printf("Size of a float: %lu byte(s)\n", sizeof(float));
+return (0);
 }
-
